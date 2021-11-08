@@ -40,4 +40,8 @@ class Filesystem:
             target_dir.files
         ), None)
 
+        if not target_file:
+            print("No such file")
+            return
+
         print(target_file.content)
